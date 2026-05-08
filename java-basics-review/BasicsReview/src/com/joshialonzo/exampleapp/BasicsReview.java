@@ -1,5 +1,7 @@
 package com.joshialonzo.exampleapp;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -41,6 +43,9 @@ public class BasicsReview {
 
         // Catch the input
         basics.catchTheInput();
+
+        // Read a file
+        basics.readFile();
     }
 
     int addNumbers(int num1, int num2) {
@@ -83,5 +88,18 @@ public class BasicsReview {
         System.out.println("Enter your name: ");
         String name = scanner.nextLine();
         System.out.println("Hello, " + name);
+    }
+
+    void readFile() {
+        try {
+            File file = new File("assets/example.txt");
+            Scanner scanner =  new Scanner(file);
+            while (scanner.hasNext()) {
+                System.out.println(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Wait, the file isn't there!");
+            e.printStackTrace();
+        }
     }
 }
