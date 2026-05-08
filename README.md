@@ -1,10 +1,9 @@
-# Microservices
-
-Microservices using:
+# Microservices Technologies
 
 * Python
-* Java
 * Flask
+* Java
+* Spring Boot
 * MySQL
 * MongoDB
 * RabbitMQ
@@ -13,5 +12,7 @@ Microservices using:
 * Kubernetes
 * AWS
 * Amazon EKS
+
+# Microservices Projects
 
 * ## [Basic Microservices in Python](flask-basics/README.md)
