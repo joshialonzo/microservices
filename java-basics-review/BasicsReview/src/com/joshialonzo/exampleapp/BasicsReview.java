@@ -46,6 +46,9 @@ public class BasicsReview {
 
         // Read a file
         basics.readFile();
+
+        // Sum of a list
+        basics.sumOfAList();
     }
 
     int addNumbers(int num1, int num2) {
@@ -101,5 +104,17 @@ public class BasicsReview {
             System.out.println("Wait, the file isn't there!");
             e.printStackTrace();
         }
+    }
+
+    void sumOfAList()  {
+        List<Integer> myList = new ArrayList<>();
+        myList.add(9);
+        myList.add(3);
+        myList.add(1);
+        Integer total = 0;
+        for (Integer value : myList) {
+            total += value;
+        }
+        System.out.println("The sum of a list is " + total);
     }
 }
