@@ -2,6 +2,7 @@ package com.joshialonzo.exampleapp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class BasicsReview {
 
@@ -37,6 +38,9 @@ public class BasicsReview {
         System.out.println(
                 "The name of the person is: " + person.getName() + "."
         );
+
+        // Catch the input
+        basics.catchTheInput();
     }
 
     int addNumbers(int num1, int num2) {
@@ -72,5 +76,12 @@ public class BasicsReview {
         } else {
             System.out.println("My Integer is null.");
         }
+    }
+
+    void catchTheInput() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name);
     }
 }
