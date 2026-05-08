@@ -1,4 +1,5 @@
-import java.awt.*;
+package com.joshialonzo.exampleapp;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +30,13 @@ public class BasicsReview {
 
         // Print conditional statements
         basics.printConditionalStatement();
+
+        // Use Person class
+        Person person = new Person();
+        person.setName("John Doe");
+        System.out.println(
+                "The name of the person is: " + person.getName() + "."
+        );
     }
 
     int addNumbers(int num1, int num2) {
