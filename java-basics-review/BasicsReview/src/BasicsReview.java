@@ -26,6 +26,9 @@ public class BasicsReview {
 
         // Print a list
         basics.printList();
+
+        // Print conditional statements
+        basics.printConditionalStatement();
     }
 
     int addNumbers(int num1, int num2) {
@@ -52,5 +55,14 @@ public class BasicsReview {
             System.out.print(value + " ");
         }
         System.out.println();
+    }
+
+    void printConditionalStatement() {
+        Integer myInteger = null;
+        if (myInteger != null) {
+            System.out.println(myInteger.toString());
+        } else {
+            System.out.println("My Integer is null.");
+        }
     }
 }
