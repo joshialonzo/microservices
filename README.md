@@ -17,3 +17,4 @@
 
 * ## [Basic Microservices in Python](flask-basics/README.md)
 * ## [Kotlin Essential Training](kotlin-essential-training/README.md)
+* ## [Python Task Manager](task_manager/README.md)
